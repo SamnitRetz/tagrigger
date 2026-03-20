@@ -3,41 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TagRigger PRO | Advanced Metadata Automation</title>
+    <title>TagRigger | Text-based Tag Management Tool</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f1115; color: #e1e4e8; line-height: 1.6; margin: 0; padding: 0; }
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; text-align: center; }
-        h1 { font-size: 3rem; margin-bottom: 10px; color: #fff; letter-spacing: -1px; }
-        .tagline { font-size: 1.25rem; color: #8b949e; margin-bottom: 40px; }
-        .screenshot { background: #1c1f26; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin-bottom: 40px; min-height: 300px; display: flex; align-items: center; justify-content: center; color: #484f58; }
-        .btn { background: #238636; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1rem; display: inline-block; }
-        .btn:hover { background: #2ea043; }
-        footer { margin-top: 80px; padding-top: 20px; border-top: 1px solid #30363d; font-size: 0.9rem; color: #8b949e; }
-        footer a { color: #58a6ff; text-decoration: none; margin: 0 10px; }
-        .features { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left; margin-top: 40px; }
-        .feature-card { background: #1c1f26; padding: 20px; border-radius: 8px; border: 1px solid #30363d; }
+        /* Основная цветовая палитра - Slate & Professional Grey */
+        :root {
+            --bg-color: #24292e;
+            --card-bg: #2d333b;
+            --border-color: #444c56;
+            --text-main: #adbac7;
+            --text-bright: #ffffff;
+            --accent-color: #2ea043;
+        }
+
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            background: var(--bg-color); 
+            color: var(--text-main); 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 0; 
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 60px 20px; text-align: center; }
+        
+        h1 { font-size: 2.8rem; margin-bottom: 10px; color: var(--text-bright); letter-spacing: -0.5px; }
+        .description { font-size: 1.15rem; margin-bottom: 30px; text-align: left; background: var(--card-bg); padding: 25px; border-radius: 12px; border: 1px solid var(--border-color); }
+        
+        .btn { background: var(--accent-color); color: white; padding: 14px 32px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 1.1rem; display: inline-block; transition: opacity 0.2s; }
+        .btn:hover { opacity: 0.9; }
+
+        .test-info { 
+            margin-top: 30px; 
+            padding: 20px; 
+            border: 1px dashed #f1e05a; 
+            border-radius: 8px; 
+            background: rgba(241, 224, 90, 0.05); 
+            text-align: left;
+            font-size: 0.95rem;
+        }
+        .test-info strong { color: #f1e05a; }
+
+        footer { margin-top: 80px; padding-top: 30px; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: #768390; }
+        footer a { color: #539bf5; text-decoration: none; margin: 0 10px; }
+        .reseller-info { margin-top: 15px; font-style: italic; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>TagRigger PRO</h1>
-        <p class="tagline">Automate your photography workflow with precision metadata tagging.</p>
+        <h1>TagRigger</h1>
         
-        <div class="screenshot">
-            [ TagRigger Interface Preview ]
+        <div class="description">
+            TagRigger is a productivity tool for organizing and managing a catalog of text-based tags. 
+            The application allows users to create tag sets. To test the app, please add several tag sets 
+            and add individual tags to those sets. You can edit, rename, and delete both the sets and the tags.
+            <br><br>
+            The application is a standalone data manager and requires no external files, accounts, or specialized hardware for testing.
         </div>
 
         <a href="#" class="btn">Get TagRigger for Windows</a>
 
-        <div class="features">
-            <div class="feature-card">
-                <strong>⚡ Lightning Fast</strong>
-                <p>Process hundreds of images in seconds with optimized automation scripts.</p>
-            </div>
-            <div class="feature-card">
-                <strong>🎯 Precision Tags</strong>
-                <p>Advanced logic for accurate metadata handling and SMM optimization.</p>
-            </div>
+        <div class="test-info">
+            <strong>Microsoft Store Certification Note:</strong><br>
+            To access PRO features for testing purposes, please use the following license key: 
+            <code><strong>MS-TESTER-2026</strong></code>. <br>
+            This key unlocks all restricted functionality (e.g., unlimited sets or advanced export) without requiring a real purchase.
         </div>
 
         <footer>
@@ -45,6 +73,9 @@
             <p>
                 <a href="privacy.html">Privacy Policy</a> | 
                 <a href="mailto:support@tagrigger.com">Support</a>
+            </p>
+            <p class="reseller-info">
+                Payments are securely processed by <strong>PayPro Global</strong> (PayPro Global, Inc., 225 The East Mall, Suite 1117, Toronto, ON, M9B 6J1, Canada), our authorized e-commerce reseller.
             </p>
         </footer>
     </div>
