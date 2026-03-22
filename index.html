@@ -3,85 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TagRigger | Professional Tag Management Tool</title>
-    <style>
-        :root {
-            --bg-color: #0f1115; /* Глубокий темный */
-            --card-bg: #1c1f26;
-            --border-color: #30363d;
-            --text-main: #8b949e;
-            --text-bright: #ffffff;
-            --accent-blue: #0078D4; /* Цвет из вашего приложения */
-        }
-
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
-            background: var(--bg-color); 
-            color: var(--text-main); 
-            line-height: 1.6; 
-            margin: 0; 
-            padding: 0; 
-        }
-        .container { max-width: 900px; margin: 0 auto; padding: 60px 20px; text-align: center; }
-        
-        h1 { font-size: 3.5rem; margin-bottom: 10px; color: var(--text-bright); letter-spacing: -1.5px; }
-        .tagline { font-size: 1.4rem; color: var(--accent-blue); margin-bottom: 40px; font-weight: 300; }
-        
-        .main-description { font-size: 1.2rem; margin-bottom: 50px; color: #e1e4e8; max-width: 700px; margin-left: auto; margin-right: auto; }
-
-        .features { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left; margin-bottom: 50px; }
-        .feature-card { background: var(--card-bg); padding: 25px; border-radius: 12px; border: 1px solid var(--border-color); }
-        .feature-card strong { color: var(--text-bright); display: block; margin-bottom: 10px; font-size: 1.1rem; }
-
-        .btn { background: var(--accent-blue); color: white; padding: 16px 36px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.2rem; display: inline-block; transition: transform 0.2s, background 0.2s; }
-        .btn:hover { background: #0086ed; transform: translateY(-2px); }
-
-        footer { margin-top: 100px; padding-top: 30px; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: #484f58; }
-        footer a { color: #58a6ff; text-decoration: none; margin: 0 10px; }
-        .reseller-info { margin-top: 20px; font-style: italic; line-height: 1.4; }
-    </style>
+    <title>TagRigger - Professional Tag Management</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>TagRigger</h1>
-        <p class="tagline">Structure. Organize. Master.</p>
-        
-        <p class="main-description">
-            The ultimate productivity tool for building complex text-based tag catalogs. 
-            Designed for precision, speed, and total control over your data sets.
-        </p>
 
-        <div class="features">
-            <div class="feature-card">
-                <strong>⚡ Dynamic Tag Sets</strong>
-                <p>Create, group, and manage logical tag structures with an intuitive interface designed for efficiency.</p>
+    <header>
+        <h1>TagRigger</h1>
+        <p class="subtitle">Structure. Organize. Master.<br>Standalone data manager for text-based tags.</p>
+    </header>
+
+    <div class="container">
+        <div class="pricing">
+            <div class="card">
+                <h3>Free</h3>
+                <div class="price">$0</div>
+                <p>Perfect for basic tag organization.</p>
+                <ul class="features">
+                    <li>Create basic tag sets</li>
+                    <li>Edit and manage tags</li>
+                    <li>Standard export options</li>
+                    <li>Privacy-first (No data collection)</li>
+                </ul>
+                <a href="#" class="btn btn-outline">Download for Windows</a>
             </div>
-            <div class="feature-card">
-                <strong>🎯 Full Lifecycle Control</strong>
-                <p>Seamlessly edit, rename, or reorganize your entire tag library in real-time with zero friction.</p>
-            </div>
-            <div class="feature-card">
-                <strong>🔒 Privacy-First</strong>
-                <p>Standalone data manager. Your catalogs stay local. No accounts, no cloud dependencies, no tracking.</p>
-            </div>
-            <div class="feature-card">
-                <strong>🚀 Lightweight & Fast</strong>
-                <p>A native Windows experience that requires no specialized hardware. Pure performance out of the box.</p>
+
+            <div class="card">
+                <h3>PRO Lifetime</h3>
+                <div class="price">$29.99</div>
+                <p>For power users and professionals.</p>
+                <ul class="features">
+                    <li>Unlimited tag sets</li>
+                    <li>Advanced export functionalities</li>
+                    <li>Lifetime license key</li>
+                    <li>Priority email support</li>
+                </ul>
+                <a href="mailto:support@tagrigger.com?subject=Pre-order PRO" class="btn">Get PRO License</a>
             </div>
         </div>
-
-        <a href="#" class="btn">Download for Windows</a>
-
-        <footer>
-            <p>&copy; 2026 TagRigger. All rights reserved.</p>
-            <p>
-                <a href="privacy.html">Privacy Policy</a> | 
-                <a href="mailto:support@tagrigger.com">Support</a>
-            </p>
-            <p class="reseller-info">
-                Payments are securely processed by <strong>PayPro Global</strong> (PayPro Global, Inc., 225 The East Mall, Suite 1117, Toronto, ON, M9B 6J1, Canada), our authorized e-commerce reseller.
-            </p>
-        </footer>
     </div>
+
+    <footer>
+        <div>
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Service</a> | 
+            <a href="refund.html">Refund Policy</a> | 
+            <a href="mailto:support@tagrigger.com">Support</a>
+        </div>
+        <div class="footer-legal">
+            <p>&copy; 2026 TagRigger. Developed by PE Malyhin Maksym Serhiiovych.</p>
+            <p>Payments processed by PayPro Global, an authorized reseller.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
