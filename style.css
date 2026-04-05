@@ -5,8 +5,8 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    color: #e0e0e0; /* Light text for dark theme */
-    background-color: #121212; /* Dark background matching the app */
+    color: #e0e0e0;
+    background-color: #121212;
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
@@ -34,7 +34,7 @@ h1 a {
 
 /* Links */
 a {
-    color: #634EFF; /* TagRigger brand purple */
+    color: #634EFF;
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -89,7 +89,7 @@ a:hover {
 }
 
 .card {
-    flex: 1; /* Makes both columns equal width */
+    flex: 1;
     background: #1e1e1e;
     padding: 40px 30px;
     border-radius: 12px;
@@ -118,7 +118,7 @@ a:hover {
     padding: 0;
     text-align: left;
     margin-bottom: 35px;
-    flex-grow: 1; /* Pushes the button to the bottom */
+    flex-grow: 1;
 }
 
 .features li {
@@ -136,6 +136,44 @@ a:hover {
     color: #634EFF;
     font-weight: bold;
     margin-right: 8px;
+}
+
+/* =========================================
+   FAQ Section
+========================================= */
+
+.faq-section {
+    background: #1e1e1e;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin: 0 auto 40px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-left: 3px solid #634EFF;
+    padding-left: 15px;
+}
+
+.faq-item h4 {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.faq-item p {
+    color: #a0a0a0;
+    margin: 0;
 }
 
 /* =========================================
@@ -209,6 +247,10 @@ footer a:hover {
 
 @media (max-width: 700px) {
     .pricing {
-        flex-direction: column; /* Stack columns on small screens */
+        flex-direction: column;
+    }
+    
+    .faq-section {
+        padding: 25px 20px;
     }
 }
